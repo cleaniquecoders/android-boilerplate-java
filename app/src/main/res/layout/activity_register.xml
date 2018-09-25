@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_user"
+            android:ems="12"
+            android:hint="your@email.com"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:ems="12"
+            android:hint="password"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="16dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:ems="12"
+            android:hint="confirm password"
+            android:inputType="textPassword"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimary"
+                android:text="Register"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/registered"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Already register?"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
