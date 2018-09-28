@@ -1,4 +1,4 @@
-package cleaniquecoders.com.androidboilerplate;
+package cleaniquecoders.com.androidboilerplate.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ForgetPassword extends AppCompatActivity {
+import cleaniquecoders.com.androidboilerplate.R;
+
+public class ForgetPasswordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,7 @@ public class ForgetPassword extends AppCompatActivity {
         r.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -35,7 +37,7 @@ public class ForgetPassword extends AppCompatActivity {
                 Log.d("Reset Password", "Do API Call to reset password. On success redirect to login page.");
 
 
-                Intent intent = new Intent(getApplicationContext(), Login.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
             }

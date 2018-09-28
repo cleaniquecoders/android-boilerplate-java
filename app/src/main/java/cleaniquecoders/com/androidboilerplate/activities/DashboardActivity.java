@@ -1,9 +1,11 @@
-package cleaniquecoders.com.androidboilerplate;
+package cleaniquecoders.com.androidboilerplate.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class Dashboard extends AppCompatActivity {
+import cleaniquecoders.com.androidboilerplate.R;
+
+public class DashboardActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

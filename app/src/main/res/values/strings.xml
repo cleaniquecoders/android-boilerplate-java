@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Android Boilerplate</string>
+    <string name="hint_email">your@email.com</string>
 </resources>
